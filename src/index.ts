@@ -85,7 +85,7 @@ async function handleFeedRequest(request: Request, env: Env): Promise<Response> 
           id: time,
           title: `BTC/USD: $${price.toFixed(2)}`,
           content_html: `<p>Current Bitcoin price: <b>$${price.toFixed(2)}</b> USD. Price provided by CoinGecko. Feed created by laro.dev.</p>`,
-          content_text: `Current Bitcoin price: $${price.toFixed(2)} USD. Price provided by CoinGecko. Feed created by laro.dev.`,
+          content_text: `Current Bitcoin price: $${price.toFixed(2)} USD. Price provided by CoinGecko. Feed created by <a href="https://laro.dev" target="_blank" rel="noreferrer" title="laro.dev" aria-label="laro.dev">laro.dev</a>.`,
 		  summary: `Current Bitcoin price: $${price.toFixed(2)} USD. Price provided by CoinGecko. Feed created by laro.dev.`,
           date_published: time,
 		  author: "laro.dev",
